@@ -1,4 +1,5 @@
 import "./oop.js";
+import "./callApplyBind.js";
 
 function A(){
   this.x = 11;
@@ -15,11 +16,11 @@ A.prototype = {
 
 var instanceOfA = new A();
 
-if(instanceOfA.hasOwnProperty("doStuff")){//mira si esta en su propio prototype
+if(instanceOfA.hasOwnProperty("doStuff")){//mira solo si es de su proio objeto, no mira en la cadena de prototype
 
 }
 
-if("doStuff" in instanceOfA){//mira en toda la cadena de prototype 
+if("doStuff" in instanceOfA){//mira en toda la cadena de prototype
 
 }
 //PROTOTYPE CHAIN
